@@ -1,0 +1,12 @@
+btop/
+dconf/
+go/
+gtk-3.0/
+htop/
+nautilus/
+nvim/
+pulse/
+rog/
+yay
+user-dirs.dirs
+user-dirs.locale
