@@ -7,16 +7,16 @@
 
 "modules-left": ["sway/mode","cpu","memory","network","mpd"],
 "modules-center": ["sway/workspaces","hyprland/workspaces"],
-"modules-right":  ["tray","idle_inhibitor","pulseaudio","backlight","battery","clock"],
+"modules-right":  ["tray","pulseaudio","backlight","battery","clock"],
 
 "battery": {
   "states": {
   "warning": 30,
   "critical": 15
   },
-  "format": "{icon}&#8239;{capacity}%",
-  "format-charging": "&#8239;{capacity}%",
-  "format-plugged": "&#8239;{capacity}%",
+  "format": "{icon}&#8239; {capacity}%",
+  "format-charging": "&#8239; {capacity}%",
+  "format-plugged": "&#8239; {capacity}%",
   "format-alt": "{icon} {time}",
   "format-icons": ["", "", "", "", ""]
 },
@@ -37,13 +37,13 @@
 },
 "clock": {
     "locale": "C", 
-    "format": " {:%I:%M %p}",
-    "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
+    "format": "  {:%I:%M %p}",
+    "format-alt": "  {:%a,%b %d}" // Icon: calendar-alt
 },
 "cpu": {
-    "format": "&#8239;{usage}%",
+    "format": "&#8239; {usage}%",
     "tooltip": false,
-    "on-click": "kitty -e 'htop'"
+    "on-click": "kitty -e 'btop'"
 },
 "memory": {
     "interval": 30,
@@ -81,7 +81,7 @@
 },
 "pulseaudio": {
   // "scroll-step": 1, // %, can be a float
-  "format": "{icon} {volume}% {format_source}",
+  "format": "{icon}  {volume}% {format_source}",
   "format-bluetooth": "{icon} {volume}% {format_source}",
   "format-bluetooth-muted": " {format_source}",
   "format-muted": "  {format_source}",
