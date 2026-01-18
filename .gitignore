@@ -21,6 +21,9 @@ obs-studio/
 pulse/
 unity3d/
 unityhub/
+ardour8/
+chromium/
+gtk-2.0/
 pavucontrol.ini
 QtProject.conf
 mimeapps.list
